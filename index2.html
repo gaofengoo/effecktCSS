@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Effeckt.css</title>
+    <meta name="description" content="UI-Less & Performant Transitions & Animations">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/demo/demo.css">
+    <link rel="stylesheet" href="assets/css/effeckt.css">
+</head>
+
+<body>
+    <nav class="effeckt-off-screen-nav" id="effeckt-off-screen-nav">
+        <header>
+            <h4>
+                Navigation
+            </h4>
+            <a href="#0" id="effeckt-off-screen-nav-close" class="effeckt-off-screen-nav-close">×</a>
+        </header>
+        <ul>
+            <li><a href="#0">This</a></li>
+            <li><a href="#0">Little</a></li>
+            <li><a href="#0">Piggy</a></li>
+            <li><a href="#0">Went</a></li>
+            <li><a href="#0">To</a></li>
+            <li><a href="#0">Market</a></li>
+        </ul>
+    </nav>
+    <div class="effeckt-page-transition" id="effeckt-page-transition">
+        <div class="effeckt-page-transition-content">
+            <h2>Page Transition</h2>
+            <p>This is another page.</p>
+            <button class="page-transition-reset-button">Reset Transition</button>
+        </div>
+    </div>
+    <div data-effeckt-page="page-1">
+        <div class="page-wrap no-transitions" id="page-wrap">
+            <div class="effeckt effeckt-demo-modals">
+                <div class="button-group">
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-overlay">Left Overlay</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-reveal">Left Reveal</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-push">Left Push</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-bounce" data-effeckt-needs-hide-class="true">Left Bounce</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-bounce-out" data-effeckt-needs-hide-class="true">Left Bounce Out</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-squeeze">Left Squeeze</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-left-rotate" data-threedee="true">Left Rotate</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-overlay">Right Overlay</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-reveal">Right Reveal</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-push">Right Push</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-bounce" data-effeckt-needs-hide-class="true">Right Bounce</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-bounce-out" data-effeckt-needs-hide-class="true">Right Bounce Out</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-squeeze">Right Squeeze</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-right-rotate" data-threedee="true">Right Rotate</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-top-overlay">Top Overlay</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-push-top">Top Push</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-top-bounce" data-effeckt-needs-hide-class="true">Top Bounce</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-top-bounce-out" data-effeckt-needs-hide-class="true">Top Bounce Out</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-top-card-deck">Top Card Deck</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-top-rotate" data-threedee="true">Top Rotate</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-overlay">Bottom Overlay</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-push-bottom">Bottom Push</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-bounce" data-effeckt-needs-hide-class="true">Bottom Bounce</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-bounce-out" data-effeckt-needs-hide-class="true">Bottom Bounce Out</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-card-deck">Bottom Card Deck</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-bottom-rotate" data-threedee="true">Bottom Rotate</button>
+                    <button class="off-screen-nav-button" data-effeckt-type="effeckt-off-screen-nav-minimize-reaveal" data-threedee="true" data-effeckt-needs-hide-class="true">Minimize then reveal</button>
+                </div>
+            </div>
+        </div><!-- div.page-wrap -->
+    </div>
+    <div data-effeckt-page="page-2">
+        <div class="page-wrap" id="page-2">
+            <h2>Page Transition From Left</h2>
+            <p>This is another page.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nulla unde doloremque consequuntur illum quo dolor. Tenetur, voluptate temporibus fuga labore atque illum quas vel dignissimos impedit vitae corporis itaque!<p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sunt tempora perspiciatis officia laudantium voluptas dicta! Nesciunt, magnam nostrum velit iste beatae totam voluptatibus sint quas amet modi architecto labore.</p>
+                    <button class="effeckt-page-transition-button" data-effeckt-transition-in="slide-from-right" data-effeckt-transition-out="slide-to-left" data-effeckt-transition-page="page-1">Slide From Right</button>
+        </div>
+    </div>
+    <div data-effeckt-page="page-3">
+        <div class="page-wrap" id="page-3">
+            <h2>Page Transition From Right</h2>
+            <p>This is another page.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, accusamus, aliquam error excepturi asperiores ipsum nobis molestias neque molestiae illum magnam mollitia nulla temporibus aliquid esse rem amet cumque facilis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, temporibus, ducimus architecto quidem voluptatem sint maiores atque deserunt sed aspernatur eveniet vel perferendis corrupti impedit aut voluptates neque similique enim.</p>
+            <button class="effeckt-page-transition-button" data-effeckt-transition-in="slide-from-left" data-effeckt-transition-out="slide-to-right" data-effeckt-transition-page="page-1">Slide From Left</button>
+        </div>
+    </div>
+    <div data-effeckt-page="page-4">
+        <div class="page-wrap" id="page-4">
+            <h2>Page Transition From Bottom</h2>
+            <p>This is another page.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, accusamus, aliquam error excepturi asperiores ipsum nobis molestias neque molestiae illum magnam mollitia nulla temporibus aliquid esse rem amet cumque facilis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, temporibus, ducimus architecto quidem voluptatem sint maiores atque deserunt sed aspernatur eveniet vel perferendis corrupti impedit aut voluptates neque similique enim.</p>
+            <button class="effeckt-page-transition-button" data-effeckt-transition-in="slide-from-top" data-effeckt-transition-out="slide-to-bottom" data-effeckt-transition-page="page-1">Slide From Top</button>
+        </div>
+    </div>
+    <div data-effeckt-page="page-5">
+        <div class="page-wrap" id="page-5">
+            <h2>Page Transition From Top</h2>
+            <p>This is another page.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, accusamus, aliquam error excepturi asperiores ipsum nobis molestias neque molestiae illum magnam mollitia nulla temporibus aliquid esse rem amet cumque facilis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, temporibus, ducimus architecto quidem voluptatem sint maiores atque deserunt sed aspernatur eveniet vel perferendis corrupti impedit aut voluptates neque similique enim.</p>
+            <button class="effeckt-page-transition-button" data-effeckt-transition-in="slide-from-bottom" data-effeckt-transition-out="slide-to-top" data-effeckt-transition-page="page-1">Slide From Bottom</button>
+        </div>
+    </div>
+    <script src="assets/js/libs/jquery.min.js"></script>
+    <script src="assets/js/core.js"></script>
+    <script src="assets/js/modules/off-screen-nav.js"></script>
+    <script src="assets/js/modules/page-transitions.js"></script>
+</body>
+
+</html>
